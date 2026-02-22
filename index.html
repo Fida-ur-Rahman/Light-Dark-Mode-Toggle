@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light/Dark Mode Toggle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-palette logo-icon"></i>
+                <span>ThemeSwitcher</span>
+            </div>
+            
+            <div class="theme-toggle-container">
+                <span class="theme-label">Theme</span>
+                <div class="toggle-wrapper">
+                    <input type="checkbox" id="theme-toggle">
+                    <label for="theme-toggle" class="toggle-label">
+                        <i class="fas fa-sun toggle-icon sun-icon"></i>
+                        <i class="fas fa-moon toggle-icon moon-icon"></i>
+                    </label>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <h1>Light/Dark Mode Theme Switcher</h1>
+            <p class="subtitle">Toggle between light and dark themes with a smooth transition. Your preference is saved for future visits.</p>
+            
+            <div class="content-grid">
+                <div class="card">
+                    <h3><i class="fas fa-sun card-icon"></i> Light Mode</h3>
+                    <p>Light mode is designed for well-lit environments, reducing eye strain in bright conditions.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> Better for daytime use</li>
+                        <li><i class="fas fa-check-circle"></i> Lower battery consumption on OLED screens</li>
+                        <li><i class="fas fa-check-circle"></i> Traditional reading experience</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="fas fa-moon card-icon"></i> Dark Mode</h3>
+                    <p>Dark mode reduces eye strain in low-light conditions and saves battery on modern displays.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> Reduces eye strain in dim light</li>
+                        <li><i class="fas fa-check-circle"></i> Saves battery on OLED/AMOLED screens</li>
+                        <li><i class="fas fa-check-circle"></i> Minimizes blue light exposure</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="fas fa-cog card-icon"></i> Preferences</h3>
+                    <p>Your theme preference is automatically saved in your browser's local storage.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-save"></i> Auto-saves your preference</li>
+                        <li><i class="fas fa-sync-alt"></i> Switch with one click</li>
+                        <li><i class="fas fa-clock"></i> Respects system preferences</li>
+                        <li><i class="fas fa-mobile-alt"></i> Fully responsive design</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">87%</div>
+                    <div class="stat-label">Prefer Dark Mode at night</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">42%</div>
+                    <div class="stat-label">Use Auto Theme Switching</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">94%</div>
+                    <div class="stat-label">Reduced eye strain reports</div>
+                </div>
+            </div>
+            
+            <div class="instructions">
+                <h3>How It Works</h3>
+                <p>This theme switcher uses CSS custom properties (variables) to define color values for both light and dark themes. JavaScript toggles the <code>dark-mode</code> class on the document body, which changes all variable values. Your preference is saved in localStorage so it persists across visits. The design is fully responsive and works on all device sizes.</p>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Light/Dark Mode Toggle Demo • Created with HTML, CSS & JavaScript</p>
+            <p>Toggle the switch in the top right corner to change themes</p>
+        </footer>
+    </div>
+</body>
+<script src="mode.js"></script>
+</html>
